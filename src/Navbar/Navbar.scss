@@ -1,0 +1,16 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0 2vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    .logo {
+        font-family: "Acme", serif;
+        font-size: 10vh;
+        font-weight: 700;
+        color: var(--primary-color);
+        text-shadow: 1px 1px 4px var(--accent-color);
+    }
+}

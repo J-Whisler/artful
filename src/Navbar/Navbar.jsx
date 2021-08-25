@@ -4,7 +4,7 @@ import "./Navbar.scss";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div>Logo</div>
+      <div className="logo">ARTFUL.</div>
       <div>Navigation</div>
       <div>Cart</div>
     </div>
