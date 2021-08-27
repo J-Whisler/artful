@@ -1,4 +1,7 @@
 .hero {
-    background-color: var(--primary-color);
-    // margin-top: 1rem;
+    border: 2px solid white;
+    position: relative;
+    background: rgba(0,0,0,0.9);
+    // height: 88vh;
+    height: 90%;
 }
