@@ -1,17 +1,30 @@
-import React from "react";
 import "./Hero.scss";
+import HeroTopImg from "../assets/hero-left-img.jpg";
 
-import HeroLeftImg from "../assets/hero-left-img.jpg";
-import HeroBgVideo from "../assets/hero-bg-video.mov";
+import HeroCard from "./HeroCard/HeroCard";
+
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="hero__content">
-        <div className="hero__contentLeft">
-          left
-          {/* <img className="hero__bg" src={HeroLeftImg} alt="" /> */}
-        </div>
-        <div className="hero__contentRight">Right</div>
+      <div className="hero__top">
+        <img src={HeroTopImg} alt="" />
+      </div>
+      <div className="hero__bottom">
+        <HeroCard
+          image="fas fa-pencil-ruler"
+          title="Creative"
+          description="Art, Photos, and Designs"
+        />
+        <HeroCard
+          image="fas fa-dollar-sign"
+          title="Inexpensive"
+          description="Cost Efficient, High Quality wall decor"
+        />
+        <HeroCard
+          image="fas fa-layer-group"
+          title="Variety"
+          description="Many different designs"
+        />
       </div>
     </div>
   );
