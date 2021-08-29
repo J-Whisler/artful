@@ -76,6 +76,12 @@
             font-family: "Acme", serif;
             border: 2px solid var(--accent-color);
             border-radius: 1vw;
+            transition: all 0.3s linear;
+            &:hover {
+                background: var(--accent-color);
+                color: var(--primary-color);
+                box-shadow: none;
+            }
         }
     }
 }
