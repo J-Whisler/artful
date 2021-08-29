@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Switch, Route, BrowserRouter} from "react-route
 // import Navbar from './Navbar/Navbar';
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
-import Cart from './Cart/Cart';
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (

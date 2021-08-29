@@ -1,0 +1,77 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    // padding: 0 2vw;
+    height: 15%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .navbar__logo {
+        font-family: "Acme", serif;
+        font-size: 10vh;
+        font-weight: 700;
+        color: var(--primary-color);
+        text-shadow: -4px -4px 2px var(--accent-color);
+    }
+    .navbar__links {
+        display: flex;
+        height: 100%;
+        padding: 0 7vw;
+        justify-content: space-between;
+        align-items: center;
+        .navbar__linksDivider {
+            border: 1.5px solid var(--primary-color);
+            height: 35%;
+        }
+        .navbar__link {
+            display: flex;
+            flex-direction: column;
+            font-family: "Quicksand", sans-serif;
+            font-size: 3.2vh;
+            letter-spacing: 0.1vw;
+            font-weight: 900;
+            text-shadow: 0px 1px 1px rgb(0, 0, 0);
+            color: var(--accent-color);
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            // .navbar__linkUnderline {
+            //     transform: translateX(-50%);
+            // }
+            // &:hover {
+            //     transform: translateY(-10%);
+            //     .navbar__linkUnderline {
+            //         border: 2px solid var(--primary-color);
+            //         transform: translateX(0);
+            //     }
+            // }
+        }
+    }
+    .navbar__cart {
+        color: var(--primary-color);
+        font-family: "Acme", serif;
+        font-size: 3vw;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        p {
+            border: 2px solid var(--secondary-color);
+            background: var(--accent-color);
+            border-radius: 50%;
+            padding: 0 0.5vw;
+            font-size: 1.5vw;
+            color: var(--secondary-color);
+            text-shadow: 1.5px 1.5px 0px rgb(0, 0, 0);
+            position: relative;
+            top: 2.1vh;
+            left: -1vw;
+
+        }
+    }
+}

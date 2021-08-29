@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
-import Hero from "../Hero/Hero";
+import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/Hero/Hero";
+import Featured from "../components/Featured/Featured";
 
 import "./HomePage.scss";
 
@@ -9,6 +10,7 @@ const HomePage = () => {
     <div className="home">
       <Navbar />
       <Hero />
+      <Featured />
     </div>
   );
 };
