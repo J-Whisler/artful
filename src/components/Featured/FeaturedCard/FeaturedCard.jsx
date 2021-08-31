@@ -12,8 +12,21 @@ const FeaturedCard = ({ name, image, price, rating, numReviews, type }) => {
           <p>{type}</p>
           <h3>{name}</h3>
         </div>
-        <div className="featuredCard__bottom2"></div>
-        <div className="featuredCard__bottom3"></div>
+        <div className="featuredCard__bottom2">
+          <h5>${price}</h5>
+          <div className="featuredCard__bottom2Rating">
+            {Array(rating)
+              .fill()
+              .map((_) => (
+                <p>⭐</p>
+              ))}
+          </div>
+
+          <h6>{numReviews} reviews</h6>
+        </div>
+        <div className="featuredCard__bottom3">
+          <button>Add to Cart</button>
+        </div>
       </div>
     </div>
   );

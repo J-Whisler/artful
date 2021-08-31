@@ -26,7 +26,7 @@ const products = [
     name: "Green Mountain",
     image: `${greenMountain}`,
     price: 69.99,
-    rating: 4.5,
+    rating: 4,
     numReviews: 9,
     type: "Photo"
   },
@@ -44,7 +44,7 @@ const products = [
     name: "Houses Reflection",
     image: `${housesReflection}`,
     price: 59.99,
-    rating: 4.5,
+    rating: 4,
     numReviews: 22,
     type: "Painting"
   },
@@ -62,7 +62,7 @@ const products = [
     name: "Cherries",
     image: `${cherries}`,
     price: 39.99,
-    rating: 4,
+    rating: 5,
     numReviews: 3,
     type: "Painting"
   },
@@ -71,7 +71,7 @@ const products = [
     name: "Red Light",
     image: `${redLight}`,
     price: 49.99,
-    rating: 4.5,
+    rating: 5,
     numReviews: 15,
     type: "Illustration"
   },
@@ -89,7 +89,7 @@ const products = [
     name: "Colorful Building",
     image: `${colorfulBuilding}`,
     price: 59.99,
-    rating: 5,
+    rating: 4,
     numReviews: 31,
     type: "Illustration"
   },
