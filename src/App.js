@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
 // import Navbar from './components/Navbar/Navbar';
 import FullShop from './pages/FullShopPage';
-import About from './components/About/About';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <HomePage />
         </Route>
         <Route path="/about">
-          <About />
+          <AboutPage />
         </Route>
         <Route path="/shop">
           <FullShop />
