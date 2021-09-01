@@ -1,4 +1,4 @@
-.featuredCard {
+.productCard {
     background: linear-gradient(to bottom left, var(--primary-color), var(--secondary-color));
     width: 80%;
     display: flex;
@@ -6,10 +6,10 @@
     text-align: center;
     margin: 0 3.5vw;
     border-radius: 1.9vw;
-   .featuredCard__top {
+   .productCard__top {
     //    border: 2px solid blue;
        margin-bottom: 1vh;
-        .featuredCard__topImg {
+        .productCard__topImg {
             display: flex;
             width: 100%;
             height: 40vh;
@@ -17,16 +17,16 @@
             position: relative;
             outline: none;
             border-radius: 1.5vw;
-            border: 1px solid var(--primary-color);
+            border: 3px solid var(--primary-color);
             transition: all 0.5s ease;
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.1);
                 z-index: 100;
-                box-shadow: 2px 2px 5px var(--primary-color);
+                box-shadow: 3px 3px 8px var(--primary-color);
             }
         }
     }
-    .featuredCard__bottom {
+    .productCard__bottom {
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -34,7 +34,7 @@
         font-family: "Quicksand", sans-serif;
         color: var(--primary-color);
 
-        .featuredCard__bottom1 {
+        .productCard__bottom1 {
             p {
                 color: var(--accent-color);
                 font-weight: 900;
@@ -52,13 +52,13 @@
                 
             }
         }
-        .featuredCard__bottom2 {
+        .productCard__bottom2 {
             h5 {
                 font-size: 1.2vw;
                 letter-spacing: 0.14vw;
                 margin-bottom: 1vh;
             }
-           .featuredCard__bottom2Rating {
+           .productCard__bottom2Rating {
                display: flex;
                font-size: 1.2vw;
                margin-bottom: 0.3vh;
@@ -70,16 +70,17 @@
             }
 
         }
-        .featuredCard__bottom3 {
-            margin-bottom: 2vh;
+        .productCard__bottom3 {
+            margin-bottom: 2.5vh;
             button {
                 cursor: pointer;
                 outline: none;
                 border: 2px solid var(--accent-color);
                 border-radius: 1vw;
                 font-size: 1.5vw;
-                font-weight: 700;
-                padding: 0.8vh 1.5vw;
+                font-family: "Quicksand", sans-serif;
+                font-weight: 900;
+                padding: 0.8vh 1vw;
                 background: linear-gradient(to bottom right, var(--accent-color), var(--primary-color));
                 color: var(--secondary-color);
                 letter-spacing: 0.15vw;
@@ -88,8 +89,17 @@
                 &:hover {
                     transform: scale(1.02);
                 }
-
-         }
+            }
+            .productCard__bottom3Link {
+                color: var(--primary-color);
+                margin-left: 0.7vw;
+                font-size: 1.1vw;
+                font-family: "Quicksand", sans-serif;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    font-size: 1.12vw;
+                }
+            }
         }
     }
 }

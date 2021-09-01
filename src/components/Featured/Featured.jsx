@@ -3,18 +3,18 @@ import "./Featured.scss";
 
 import products from "../../data";
 
-import FeaturedCard from "./FeaturedCard/FeaturedCard";
+import ProductCard from "../ProductCard/ProductCard";
 
 const Featured = () => {
   return (
-    <div className="featured">
+    <div className="featured" id="featured">
       <div className="featured__header">
         <div className="featured__headerDiv"></div>
         <h2 className="featured__headerText">Featured Products</h2>
         <div className="featured__headerDiv"></div>
       </div>
       <div className="featured__cards">
-        <FeaturedCard
+        <ProductCard
           name={products[0].name}
           image={products[0].image}
           price={products[0].price}
@@ -22,7 +22,7 @@ const Featured = () => {
           numReviews={products[0].numReviews}
           type={products[0].type}
         />
-        <FeaturedCard
+        <ProductCard
           name={products[3].name}
           image={products[3].image}
           price={products[3].price}
@@ -30,7 +30,7 @@ const Featured = () => {
           numReviews={products[3].numReviews}
           type={products[3].type}
         />
-        <FeaturedCard
+        <ProductCard
           name={products[6].name}
           image={products[6].image}
           price={products[6].price}

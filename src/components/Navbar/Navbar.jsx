@@ -7,21 +7,23 @@ import { Link as LinkScroll } from "react-scroll";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="navbar__logo">ARTFUL.</div>
+      <Link to="/" className="navbar__logo">
+        ARTFUL.
+      </Link>
       <div className="navbar__links">
-        <Link className="navbar__link">
-          About Us <div className="navbar__linkUnderline"></div>
+        <Link to="/" className="navbar__link">
+          Home <div className="navbar__linkUnderline"></div>
         </Link>
         <div className="navbar__linksDivider"></div>
-        <LinkScroll className="navbar__link">
-          Featured Products <div className="navbar__linkUnderline"></div>
-        </LinkScroll>
-        <div className="navbar__linksDivider"></div>
-        <Link className="navbar__link">
+        <Link to="/shop" className="navbar__link">
           Full Shop <div className="navbar__linkUnderline"></div>
         </Link>
+        <div className="navbar__linksDivider"></div>
+        <Link to="/about" className="navbar__link">
+          About Us <div className="navbar__linkUnderline"></div>
+        </Link>
       </div>
-      <Link className="navbar__cart">
+      <Link to="/cart" className="navbar__cart">
         <i className="fas fa-shopping-bag"></i>
         <p>2</p>
       </Link>
