@@ -1,10 +1,38 @@
 .cart {
     height: 100vh;
-    .cart__emptyMessage {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    // align-items: center;
+    .cart__empty {
+        color: var(--secondary-color);
+        font-family: "Quicksand", sans-serif;
+       .cart__emptyMessage {
+           font-size: 4vw;
+           letter-spacing: 0.5vw;
+           margin-top: 5vh;
+           margin-bottom: 8vh;
+       }
+       .cart__emptySecondMessage {
+           font-size: 2vw;
+           letter-spacing: 0.2vw;
+           margin-bottom: 5vh;
+       }
+       .cart__emptyButton {
+           text-decoration: none;
+           background: var(--accent-color);
+           color: var(--primary-color);
+           font-family: "Quicksand", sans-serif;
+           font-size: 1.8vw;
+           letter-spacing: 0.1vw;
+           padding: 0.5vh 1vw;
+           border-radius: 2vw;
+       }
 
     }
 
     .cart__items {
         display: flex;
+        flex-direction: column;
     }
 }
