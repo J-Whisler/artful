@@ -1,7 +1,25 @@
 import React from "react";
 import "./ProductCard.scss";
 import { Link } from "react-router-dom";
-const ProductCard = ({ name, image, price, rating, numReviews, type }) => {
+
+import { useStateValue } from "../../context/StateProvider";
+
+const ProductCard = ({ id, name, image, price, rating, numReviews, type }) => {
+  const [{}, dispatch] = useStateValue();
+
+  const addToBasket = () => {
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id,
+        name,
+        image,
+        price,
+        rating,
+      },
+    });
+  };
+
   return (
     <div className="productCard">
       <div className="productCard__top">
@@ -25,7 +43,7 @@ const ProductCard = ({ name, image, price, rating, numReviews, type }) => {
           <h6>{numReviews} reviews</h6>
         </div>
         <div className="productCard__bottom3">
-          <button>Add to Cart</button>
+          <button onClick={addToBasket}>Add to Cart</button>
           <Link className="productCard__bottom3Link" to="/shop">
             See Full Shop
           </Link>

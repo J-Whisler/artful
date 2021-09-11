@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="about">
+      {/* {console.log(multiply())} */}
       <Link to="/" className="about__back">
         <span>Home</span>
         <i className="fas fa-arrow-left"></i>

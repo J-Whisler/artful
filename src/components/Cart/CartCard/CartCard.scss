@@ -1,0 +1,21 @@
+.cartCard {
+    background: var(--secondary-color);
+    border-radius: 1.9vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  .cartCard__left {
+    //    border: 2px solid blue;
+       border-radius: 2vw;
+      img {
+          width: 100%;
+          height: 100%;
+          border-radius: 2vw 0 0 2vw;
+          object-fit: contain;
+          margin-left: 0.1vw;
+          box-shadow: 2px 0px 10px var(--primary-color);
+      }
+  }
+  .cartCard__middle {
+    //   border: 2px solid blue;
+  }
+}

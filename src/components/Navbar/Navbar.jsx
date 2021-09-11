@@ -4,7 +4,11 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
+import { useStateValue } from "../../context/StateProvider";
+
 const Navbar = () => {
+  const [{ basket }] = useStateValue();
+
   return (
     <div className="navbar">
       <Link to="/" className="navbar__logo">
@@ -25,7 +29,7 @@ const Navbar = () => {
       </div>
       <Link to="/cart" className="navbar__cart">
         <i className="fas fa-shopping-bag"></i>
-        <p>2</p>
+        <p>{basket.length}</p>
       </Link>
     </div>
   );
