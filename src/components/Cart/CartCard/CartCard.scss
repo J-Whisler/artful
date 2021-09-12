@@ -1,12 +1,13 @@
 .cartCard {
-    background: var(--secondary-color);
     border-radius: 1.9vw;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 2fr 7fr 1fr;
     margin: 2vh 0;
-  .cartCard__left {
-       border-radius: 2vw;
-      img {
+    height: 100%;
+    background: var(--secondary-color);
+    .cartCard__left {
+        border-radius: 2vw;
+        img {
           width: 100%;
           height: 100%;
           border-radius: 1.8vw 0 0 1.8vw;
@@ -14,6 +15,66 @@
       }
   }
   .cartCard__middle {
-    //   border: 2px solid blue;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .cartCard__middleLeft {
+        font-family: "Quicksand", sans-serif;
+        padding: 1.5vw 0 0 2vw;
+        h6 {
+            color: var(--accent-color);
+            font-size: 1vw;
+            margin-bottom: 1vh;
+            letter-spacing: 0.1vw;
+            font-weight: 900;
+        }
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.5vw;
+            letter-spacing: 0.2vw;
+            text-decoration: underline;
+            margin-bottom: 1.5vh;
+            font-weight: 900;
+        }
+        h5 {
+            color: var(--primary-color);
+            font-size: 1.1vw;
+            letter-spacing: 0.1vw;
+        }
+    }
+    .cartCard__middleRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2vw;
+        font-family: "Quicksand", sans-serif;
+        .cartCard__MiddleRightRating {
+            display: flex;
+            margin-bottom: 1.5vh;
+        }
+        h4 {
+            font-size: 1.2vw;
+            font-weight: 900;
+        }
+       
+
+    }
   }
+  .cartCard__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: 3px solid var(--primary-color);
+      i {
+          color: var(--primary-color);
+          opacity: 0.8;
+          font-size: 1.6vw;
+          cursor: pointer;
+          transition: all 0.1s ease-in-out;
+          
+          &:hover {
+              opacity: 0.7;
+          }
+      }
+  }
+  
 }

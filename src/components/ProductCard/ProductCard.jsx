@@ -16,6 +16,8 @@ const ProductCard = ({ id, name, image, price, rating, numReviews, type }) => {
         image,
         price,
         rating,
+        type,
+        numReviews,
       },
     });
   };

@@ -1,12 +1,10 @@
 .cart {
-    height: 100vh;
     display: flex;
-    text-align: center;
     justify-content: center;
-    // align-items: center;
     .cart__empty {
         color: var(--secondary-color);
         font-family: "Quicksand", sans-serif;
+        text-align: center;
        .cart__emptyMessage {
            font-size: 4vw;
            letter-spacing: 0.5vw;
